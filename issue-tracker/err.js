@@ -1,0 +1,3 @@
+console.sel;
+sele;
+$('#btn');

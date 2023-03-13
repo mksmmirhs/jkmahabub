@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Food Shop</title>
+  </head>
+
+  <input type="checkbox" id="my-modal" class="modal-toggle" />
+  <div class="modal" id="modal-box">
+    <div class="modal-box">
+      <h3 class="font-bold text-lg" id="modal-title"></h3>
+      <img class="w-6/12 mx-auto" alt="" id="set-image" />
+      <div class="modal-action">
+        <label for="my-modal" class="btn">Close!</label>
+      </div>
+    </div>
+  </div>
+
+  <body class="max-w-7xl mx-auto">
+    <section class="mb-16 h-[100px] flex justify-center items-center">
+      <input
+        type="text"
+        id="search-text"
+        placeholder="Search Item"
+        class="bg-slate-300 rounded px-4 mr-4"
+      />
+      <button
+        class="p-1 rounded bg-sky-400 hover:bg-sky-200"
+        onclick="searchFood()"
+      >
+        Search
+      </button>
+    </section>
+    <section class="grid grid-cols-3 gap-16" id="card-section"></section>
+    <script src="js/food.js"></script>
+  </body>
+</html>
